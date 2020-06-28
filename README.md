@@ -1,2 +1,2 @@
-# rdip1
+# rdip
 My first repository on GitHub.
