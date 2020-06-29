@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<title>
+REGISTRATION
+</title>
+<h1>REGISTRATION PAGE: </h1>
+
+<a href="https://www.iiit.ac.in/"><img src="iiit-new.png" alt="IIIT HYDERABAD style="width:50px;height:50px;size:50px;border-radius: 50%;"   ></a>
+
+
+<link rel="stylesheet" href="style1.css">
+
+<body>
+<ul>
+  <li><a class="active" href="HOME.html">Home</a></li>
+  <li><a href="">Registration form</a></li>
+ 
+</ul>
+</body>
+
+<div class="topright">
+<a href="https://serc.iiit.ac.in/rdip/"  >RDIP </a>
+</div>
+<br><br><br><form method="post" action="details.html" "target="_blank">
+  <label for="fname">First name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label >
+  <input type="text" id="fname" name="fname"><br><br>
+
+ 
+  <label for="email">E-mail:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+  <input type="email" id="email" name="email"><br><br>
+   <label for="phone">Phone No:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+  <input type="tel" id="phone" name="phone"  pattern="[0-9]{10}" required><br><br>
+   
+  Gender:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="radio" id="bachelors" name="branch" value="branch">
+  <label for="bachelors">Male</label>
+  
+  <input type="radio" id="masters" name="branch" value="branch">
+  <label for="masters">Female</label>
+    <input type="radio" id="masters" name="branch" value="branch">
+  <label for="masters">Other</label><br><br>
+    Reasons for RDIP:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  
+  <input type="radio" id="bachelors" name="reason" value="reason">
+  <label for="bachelors">HTML</label>
+  
+  <input type="radio" id="masters" name="reason" value="reason">
+  <label for="masters">CSS</label>
+   <input type="radio" id="masters" name="reason" value="reason">
+  <label for="masters">Java script</label><br><br>
+  <label for="collegename">College:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+  <input type="text" id="collegename" name="collegename"><br><br>
+ <script>
+ function disableSubmit() {
+  document.getElementById("submit").disabled = true;
+ }
+
+  function activateButton(element) {
+
+      if(element.checked) {
+        document.getElementById("submit").disabled = false;
+       }
+       else  {
+        document.getElementById("submit").disabled = true;
+      }
+
+  }
+</script>
+</head>
+
+<body onload="disableSubmit()">
+ <input type="checkbox" name="terms" id="terms" onchange="activateButton(this)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   I declare above details given by me are true.
+<br><br>
+  <input type="submit" name="submit" id="submit">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  
+  
+  <input type="reset" value="Reset">
+
+  <br>
+
+  
+  
+</form>
+</html>
