@@ -69,27 +69,62 @@ table, td {
 <button type="button" onclick="myFunction4()">10th word</button>
 
 <p id="demo8"></p>
-
-<button id="hider">Hide</button>
-<button id="shower">Show</button>
+<b>double click these buttons</b>
+<button class="hideBtn">Hide</button>
+<button class="showBtn">Show</button>
 <div>
   <span>Remote</span> <span>digital</span> <span>internship</span>
   <span>program</span> <span>by</span> <span>IIIT</span>
   <span>hyderabad</span> <span> for programmers...</span>
 </div>
+
 <script>
-$( "#hider" ).click(function() {
-  $( "span:last-child" ).hide( "fast", function() {
-    // Use arguments.callee so we don't need a named function
-    $( this ).prev().hide( "fast", arguments.callee );
+
+$(document).ready(function(){
+  $(".hideBtn").dblclick(function(){
+  $("div").hide("fast");
+  });
+
+$(".showBtn").dblclick(function(){
+  $("div").show("fast");
   });
 });
-$( "#shower" ).click(function() {
-  $( "span" ).show( 2000 );
+</script>
+ <br> <br> <br>
+<span1>Fade_in</span1>
+<div1 id="one"></div1>
+<div1 id="two"></div1>
+<div1 id="three"></div1>
+ 
+<script>
+$( document.body ).click(function() {
+  $( "div1:hidden" ).first().fadeIn( "slow" );
 });
-
 </script>
 
+ 
+ <style>
+  span1 {
+    color: red;
+    cursor: pointer;
+  }
+  div1 {
+    margin: 3px;
+    width: 80px;
+    display: none;
+    height: 80px;
+    float: left;
+  }
+  #one {
+    background: #f00;
+  }
+  #two {
+    background: #0f0;
+  }
+  #three {
+    background: #00f;
+  }
+  </style>
 
 </body>
 </html> 
