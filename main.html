@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <body>
-
+<meta charset="utf-8">
 <h2>My First JavaScript</h2>
 <style>
 table
@@ -12,11 +12,16 @@ table, td {
   border-collapse: collapse;
   border: 3px solid black;
 }
+  span {
+    background: #ff8080;
+    padding: 3px;
+    float: left;
+  }
 </style>
 
 
 <p >This is doing the same job as the <link> element for CSS. It applies the JavaScript to the page, so it can have an effect on the HTML (along with the CSS, and anything else on the page).</p>
-
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 <script src="Java Script.js"> </script>
 <table id="myTable">
    <tr>
@@ -45,7 +50,9 @@ table, td {
 </form>
 
 <script src="new.js"> </script>
+
 <div id="digital-clock"></div>
+
 <button onclick="displayDate()">The time is?</button>
 <p id="demo"></p>
 <button onclick="l()">Fibonacci</button>
@@ -62,6 +69,27 @@ table, td {
 <button type="button" onclick="myFunction4()">10th word</button>
 
 <p id="demo8"></p>
+
+<button id="hider">Hide</button>
+<button id="shower">Show</button>
+<div>
+  <span>Remote</span> <span>digital</span> <span>internship</span>
+  <span>program</span> <span>by</span> <span>IIIT</span>
+  <span>hyderabad</span> <span> for programmers...</span>
+</div>
+<script>
+$( "#hider" ).click(function() {
+  $( "span:last-child" ).hide( "fast", function() {
+    // Use arguments.callee so we don't need a named function
+    $( this ).prev().hide( "fast", arguments.callee );
+  });
+});
+$( "#shower" ).click(function() {
+  $( "span" ).show( 2000 );
+});
+
+</script>
+
 
 </body>
 </html> 
