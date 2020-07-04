@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+<script src="alltasks.js"></script>
+<link rel="stylesheet" href="task4.css">
+<h2>IT IS A GAME</h2>
+
+
+<form action="/action_page.php" id="game"  onsubmit="game()" method="get" target="_blank">
+  <b> Click it for first no :</b><br>
+ <input type="button" value="click" onclick="document.getElementById('firstno').value=display()" />
+   <p colspan="3"><input type="text" id="firstno" sixe=30px ></p>
+    <b> click it for second no:</b><br>
+   <input type="button" value="click" onclick="document.getElementById('secondno').value=display()" /><br>
+   
+  <input type="text" id="secondno" name="secondno" ><br><br>
+  <input type="submit" value="Submit" ><br>
+</form>
+</body>
+</html>

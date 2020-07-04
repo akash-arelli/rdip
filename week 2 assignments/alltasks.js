@@ -169,3 +169,88 @@ function anagram()
      }
 
 }
+
+
+/* odd numbers are assigned to cockroach 
+even numbers are assigned to nuclear bomb
+zero is assigned to human */
+function game()
+{
+   var firstno=document.getElementById("firstno").value;
+   var secondno=document.getElementById("secondno").value;
+   if(firstno==0)
+   {
+       firstno=0;
+   }
+   else{
+         if(firstno%2==0)
+            {
+                firstno=2;
+             }
+        else
+           {
+             firstno=1;
+             }
+   }
+     if(secondno==0)
+     {
+       secondno=0;
+      }
+   else{
+           if(secondno%2==0)
+         {
+              secondno=2;
+        }
+         else
+          {
+           secondno=1;
+           }
+
+         }
+         if(firstno==secondno)
+         {
+             
+                      
+           return   document.write("It Is A Tie");
+           
+          
+         }
+         if(firstno==0&&secondno==1||firstno==1&&secondno==0)
+         {
+             
+                      
+           return   document.write("HUMAN SURVUVES");
+           
+          
+         }
+         if(firstno==1&&secondno==2||firstno==2&&secondno==1)
+         {
+             
+                      
+           return   document.write("COCKROACH SURVIVES");
+           
+          
+         }
+             if(firstno==0&&secondno==2||firstno==2&&secondno==0)
+         {
+             
+                      
+           return   document.write("HUMAN DIES");
+           
+          
+         }
+         
+         
+     }
+     
+     
+     function display() {
+    
+    return  Math.floor((Math.random() * 100) + 1);
+    
+}
+     
+     
+     
+     
+     
