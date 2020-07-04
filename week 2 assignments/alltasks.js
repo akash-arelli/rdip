@@ -24,7 +24,17 @@ return Math.abs(val);
 
   function domath(val) {
   
-return Math.sqrt(val);
+
+var numb = Math.sqrt(val);
+if(numb % 1 === 0)
+{
+return numb;
+}
+else
+{
+return numb.toFixed(3);
+
+}
 }
 
 
@@ -246,7 +256,7 @@ function game()
      
      function display() {
     
-    return  Math.floor((Math.random() * 100) + 1);
+    return  Math.floor((Math.random() * 1000) + 1);
     
 }
      
