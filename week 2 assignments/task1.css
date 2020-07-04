@@ -1,0 +1,39 @@
+    
+  
+    div
+    { margin-top: 250px; 
+         margin-bottom: 10px; 
+         text-align:center; 
+         width:74%;
+         color:#000000; 
+         border: solid black 2px; 
+         height: 20px;
+        } 
+  
+        
+        input[type="button"] 
+         
+         { 
+         background-color:#ccccb3; 
+         color: #000000; 
+         border: solid black 3px; 
+         border-collapse:collapse;
+         width:100% 
+           } 
+  
+         input[type="text"] 
+         {
+         background-color:white; 
+         border: solid black 2px; 
+         width:100% 
+         
+         } 
+        
+        
+     body
+     {
+     
+          
+      max-width: 350px;
+       margin: auto;    
+     }   
